@@ -1,0 +1,86 @@
+// ===============================================================
+// LOCALHOST
+// ===============================================================
+
+// -----------------------
+// COURSES (Localhost)
+// -----------------------
+
+### Get all courses
+GET http://localhost:8080/courses
+
+### Get course by id
+GET http://localhost:8080/courses/6921b75c1207593db4d5dcc3
+
+### Create course
+POST http://localhost:8080/courses HTTP/1.1
+content-type: application/json
+
+{
+    "courseCode": "CSE341",
+    "courseName": "Web Services",
+    "department": "Computer Science",
+    "instructor": "Jeremy Lindsey",
+    "credits": 3,
+    "startDate": "2025-09-15",
+    "maxStudents": 30,
+    "description": "Learning how to build APIs and Web Services."
+}
+
+### Update course
+PUT http://localhost:8080/courses/6921b75c1207593db4d5dcc3 HTTP/1.1
+content-type: application/json
+
+{
+    "courseCode": "CSE341",
+    "courseName": "Web Backend Development II",
+    "department": "CSE",
+    "instructor": "Prof. Otobong",
+    "credits": 4,
+    "startDate": "2024-01-08",
+    "maxStudents": 45,
+    "description": "Advanced API development."
+}
+
+### Delete course
+DELETE http://localhost:8080/courses/6921b75c1207593db4d5dcc3
+
+
+// -----------------------
+// STUDENTS (Localhost)
+// -----------------------
+
+### Get all students
+GET http://localhost:8080/students
+
+### Get student by id
+GET http://localhost:8080/students/REPLACE_WITH_REAL_ID
+
+### Create student
+POST http://localhost:8080/students HTTP/1.1
+content-type: application/json
+
+{
+    "firstName": "David",
+    "lastName": "Samuel",
+    "email": "davidsam@gmail.com",
+    "major": "Software Engineering",
+    "enrollmentDate": "2024-08-20",
+    "birthday": "2003-05-15"
+}
+
+### Update student
+PUT http://localhost:8080/students/6921b7ac1207593db4d5dcc5 HTTP/1.1
+content-type: application/json
+
+{
+    "firstName": "David",
+    "lastName": "Samuel",
+    "email": "davids@gmail.com",
+    "major": "Graphic Design",
+    "enrollmentDate": "2025-08-20",
+    "birthday": "2003-05-15"
+}
+
+### Delete student
+DELETE http://localhost:8080/students/6921b7ac1207593db4d5dcc4

@@ -1,0 +1,85 @@
+// ===============================================================
+// PRODUCTION
+// ===============================================================
+
+// -----------------------
+// COURSES
+// -----------------------
+
+### Get all courses
+GET https://university-management-system-b55v.onrender.com/courses
+
+### Get course by id
+GET https://university-management-system-b55v.onrender.com/courses/6921b75c1207593db4d5dcc3
+
+### Create course
+POST https://university-management-system-b55v.onrender.com/courses HTTP/1.1
+content-type: application/json
+
+{
+    "courseCode": "MATH101",
+    "courseName": "Calculus I",
+    "department": "Mathematics",
+    "instructor": "Jane Doe",
+    "credits": 4,
+    "startDate": "2023-09-10",
+    "maxStudents": 50,
+    "description": "Introduction to limits and derivatives."
+}
+
+### Update course
+PUT https://university-management-system-b55v.onrender.com/courses/6921b846d7a85fa73c46684b HTTP/1.1
+content-type: application/json
+
+{
+    "courseCode": "MATH101",
+    "courseName": "Calculus I - Honors",
+    "department": "Mathematics",
+    "instructor": "Jane Doe",
+    "credits": 4,
+    "startDate": "2023-09-10",
+    "maxStudents": 25,
+    "description": "Intensive introduction to limits and derivatives."
+}
+
+### Delete course
+DELETE https://university-management-system-b55v.onrender.com/courses/6921b846d7a85fa73c46684b
+
+
+// -----------------------
+// STUDENTS
+// -----------------------
+
+### Get all students
+GET https://university-management-system-b55v.onrender.com/students
+
+### Get student by id
+GET https://university-management-system-b55v.onrender.com/students/6921b7ac1207593db4d5dcc5
+
+### Create student
+POST https://university-management-system-b55v.onrender.com/students HTTP/1.1
+content-type: application/json
+
+{
+    "firstName": "Bebe",
+    "lastName": "Oto",
+    "major": "Business Managemenet",
+    "enrollmentDate": "2024-01-10",
+    "birthday": "2006-11-29"
+}
+
+### Update student
+PUT https://university-management-system-b55v.onrender.com/students/6921b8c8d7a85fa73c46684c HTTP/1.1
+content-type: application/json
+
+{
+    "firstName": "Bebe",
+    "lastName": "Otobong",
+    "email": "beb@afro.net",
+    "major": "Hospitality",
+    "enrollmentDate": "2024-01-10",
+    "birthday": "2006-11-29"
+}
+
+### Delete student
+DELETE https://university-management-system-b55v.onrender.com/students/6921b7ac1207593db4d5dcc5
