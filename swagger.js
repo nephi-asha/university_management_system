@@ -5,7 +5,7 @@ const doc = {
     title: 'University Management System API',
     description: 'University Management System API'
   },
-  host: 'localhost:8080',
+  host: 'https://university-management-system-b55v.onrender.com',
   schemes: ['http', 'https']
 };
 
