@@ -5,7 +5,7 @@
     "description": "University Management System API",
     "version": "1.0.0"
   },
-  "host": "https://university-management-system-b55v.onrender.com",
+  "host": "university-management-system-b55v.onrender.com",
   "basePath": "/",
   "schemes": [
     "http",
