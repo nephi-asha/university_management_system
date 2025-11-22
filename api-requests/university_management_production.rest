@@ -17,6 +17,7 @@ POST https://university-management-system-b55v.onrender.com/courses HTTP/1.1
 content-type: application/json
 
 {
+    
     "courseCode": "MATH101",
     "courseName": "Calculus I",
     "department": "Mathematics",
@@ -28,22 +29,22 @@ content-type: application/json
 }
 
 ### Update course
-PUT https://university-management-system-b55v.onrender.com/courses/6921b846d7a85fa73c46684b HTTP/1.1
+PUT https://university-management-system-b55v.onrender.com/courses/6921c1422afbc9c2a4e20966 HTTP/1.1
 content-type: application/json
 
 {
     "courseCode": "MATH101",
-    "courseName": "Calculus I - Honors",
+    "courseName": "Integration",
     "department": "Mathematics",
-    "instructor": "Jane Doe",
+    "instructor": "Nephi Asha",
     "credits": 4,
     "startDate": "2023-09-10",
     "maxStudents": 25,
-    "description": "Intensive introduction to limits and derivatives."
+    "description": "Integration class"
 }
 
 ### Delete course
-DELETE https://university-management-system-b55v.onrender.com/courses/6921b846d7a85fa73c46684b
+DELETE https://university-management-system-b55v.onrender.com/courses/6921c1422afbc9c2a4e20966
 
 
 // -----------------------
@@ -54,7 +55,7 @@ DELETE https://university-management-system-b55v.onrender.com/courses/6921b846d7
 GET https://university-management-system-b55v.onrender.com/students
 
 ### Get student by id
-GET https://university-management-system-b55v.onrender.com/students/6921b7ac1207593db4d5dcc5
+GET https://university-management-system-b55v.onrender.com/students/6921b8c8d7a85fa73c46684c
 
 ### Create student
 POST https://university-management-system-b55v.onrender.com/students HTTP/1.1
@@ -63,13 +64,14 @@ content-type: application/json
 {
     "firstName": "Bebe",
     "lastName": "Oto",
+    "email": "ot0@gmail.com",
     "major": "Business Managemenet",
     "enrollmentDate": "2024-01-10",
     "birthday": "2006-11-29"
 }
 
 ### Update student
-PUT https://university-management-system-b55v.onrender.com/students/6921b8c8d7a85fa73c46684c HTTP/1.1
+PUT https://university-management-system-b55v.onrender.com/students/6921c20c2afbc9c2a4e20967 HTTP/1.1
 content-type: application/json
 
 {
@@ -82,4 +84,4 @@ content-type: application/json
 }
 
 ### Delete student
-DELETE https://university-management-system-b55v.onrender.com/students/6921b7ac1207593db4d5dcc5
+DELETE https://university-management-system-b55v.onrender.com/students/6921b8c8d7a85fa73c46684c
